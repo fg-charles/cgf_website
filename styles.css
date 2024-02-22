@@ -31,13 +31,19 @@
   --accent_green: #1c2019;
   --accent_red: #201919;
 }
+
 a:link {
-  color: 
+  color: var(--hint);
+}
+
+a:visited {
+  color: var(--info);
 }
 
 body {
   background-color: var(--bg);
-  color: var(--fg);
+  color: var(--light_gray);
+  font-size: 1.25rem;
 }
 .center {
   width: 50%;
@@ -45,10 +51,11 @@ body {
   padding: 10px;
 }
 .leftcol {
-  width: 80%;
+  flex-grow: 1;
 }
 .nav {
-  flex-grow: 1;
+  width: fit-content;
+  margin-top: 16px;
 }
 .main {
   display: flex;
@@ -59,13 +66,14 @@ body {
 }
 .ascii-art {
   font-family: monospace;
+  color: var(--white);
   white-space: pre;
   font-size: 10px;
   margin: 0;
   padding: 4px;
 }
 .trailer {
-  border-top: solid 1px var(--light_gray);
+  border-top: solid 1px var(--gray);
   text-align: center;
 }
 #logo {
@@ -81,5 +89,12 @@ body {
   margin: 10px;
   color: var(--light_gray);
   font-family: monospace;
-
 }
+
+#subdir-top-div {
+  font-size: 1.25rem;
+  margin-top:20px;
+  border-top: solid 1px var(--gray);
+  padding-left: 20px;
+}
+
